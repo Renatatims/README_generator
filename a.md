@@ -1,4 +1,7 @@
 # a
+  
+  [![License: MIT License](https://img.shields.io/badge/License-MIT%20License-blue.svg)](https://opensource.org/licenses/MIT-License)
+
   ## Description
   a
 
@@ -14,7 +17,11 @@
   a
 
   ## Features
-  a
+  aa
+
+  ## License
+  This application is covered by MIT License, available at:
+ https://opensource.org/licenses/MIT-License
 
   ## Contributing
   a
