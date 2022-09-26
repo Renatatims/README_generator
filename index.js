@@ -1,6 +1,7 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // Array of questions for user input
 const questions = [
@@ -19,7 +20,7 @@ const questions = [
         message: 'Please describe the steps and tools for the installation of your application',
         name: 'install'
     },
-   
+
     {
         type: 'input',
         message: 'Please describe the usage of your application',
@@ -33,7 +34,7 @@ const questions = [
     {
         type: 'list',
         message: 'Please select a License',
-        choices: ['Apache License 2.0', 'Boost Software License 1.0', 'Eclipse Public License 2.0','MIT License', 'Mozilla Public License 2.0'], 
+        choices: ['Apache License 2.0', 'Boost Software License 1.0', 'Eclipse Public License 2.0', 'MIT License', 'Mozilla Public License 2.0'],
         name: 'license'
     },
 
@@ -73,22 +74,24 @@ const questions = [
     },
 ];
 
-// User Input Function
+// User Input Function - return answers
 
 function userInput() {
-	return inquirer.prompt(questions);
+    return inquirer.prompt(questions);
 }
-
-userInput()
 
 // Function to write README file
 function writeToFile(fileName, data) {
-    fs.appendFile(`${fileName}.md`, data, 
-    (err) => err ? console.error(err) : console.log(`Your READ.me file, ${fileName}.md, was successfully generated!`))
-}
+    fs.writeFile(`${fileName}.md`, data, (err) => {
+        err ? console.log(err) : console.log(`Your README file, ${fileName}.md, was successfully generated!`);
+    })
+};
 
 // Function to initialize the application
-function init() {}
+async function init() {
+    let userAnswers = await userInput();
+    writeToFile((userAnswers.fileName), (generateMarkdown(userAnswers)));
+}
 
 // Call init to initialize application
 init();
