@@ -30,7 +30,7 @@
   2. Once downloaded, please type in the below to start the application:
 
    ````java 
-  npm index.js
+  node index.js
   ````
 
   ## Usage
