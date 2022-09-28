@@ -50,14 +50,14 @@
   https://opensource.org/licenses/MIT
 
   ## Contributing
-  Please feel free to send a pull request, the following is my GitHub account: https://gihub.com/Renatatims
+  Please feel free to send a pull request, the following is my GitHub account: https://github.com/Renatatims
 
   ## Tests
   Please make sure the inquirer is installed. Once the node_modules are downloaded, than you can run the application by typing 'node index.js' in the terminal and the user will be prompt with 12 questions.
 
   ## Questions
   If you have any questions please contact me at:
-   - GitHub account: https://gihub.com/Renatatims
+   - GitHub account: https://github.com/Renatatims
    - e-mail account: @gmail.com
 
   ## Credits
