@@ -34,7 +34,7 @@ const questions = [
     {
         type: 'list',
         message: 'Please select a License',
-        choices: ['Apache 2.0', 'BSL 1.0', 'EPL 2.0', 'MIT', 'MPL 2.0'],
+        choices: ['Afl 3.0','Apache 2.0','Artistic 2.0', 'BSL 1.0','CC', 'EPL 2.0', 'GPL', 'LGPL', 'ISC', 'MIT', 'MPL 2.0', 'PostgreSQL', 'NCSA', 'ZLIB'],
         name: 'license'
     },
 
@@ -70,7 +70,7 @@ const questions = [
     {
         type: 'input',
         message: 'Please enter a name to save this file',
-        name: 'fileName'
+        name: 'file'
     },
 ];
 
@@ -81,16 +81,16 @@ function userInput() {
 }
 
 // Function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(`${fileName}.md`, data, (err) => {
-        err ? console.log(err) : console.log(`Your README file, ${fileName}.md, was successfully generated!`);
+function writeToFile(file, data) {
+    fs.writeFile(`${file}.md`, data, (err) => {
+        err ? console.log(err) : console.log(`Your README file, ${file}.md, was successfully generated!`);
     })
 };
 
 // Function to initialize the application
 async function init() {
     let userAnswers = await userInput();
-    writeToFile((userAnswers.fileName), (generateMarkdown(userAnswers)));
+    writeToFile((userAnswers.file), (generateMarkdown(userAnswers)));
 }
 
 // Call init to initialize application
