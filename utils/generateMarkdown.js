@@ -43,7 +43,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions please contact me at:
-   - GitHub account:https://gihub.com/${data.github}
+   - GitHub account:https://github.com/${data.github}
    - e-mail account: ${data.email}
 
   ## Credits

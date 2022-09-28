@@ -37,7 +37,7 @@
 
   ## Questions
   If you have any questions please contact me at:
-   - github account:https://gihub.com/username
+   - GitHub account:https://github.com/username
    - e-mail account: e-mail
 
   ## Credits

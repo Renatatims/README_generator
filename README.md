@@ -53,7 +53,8 @@
   Please feel free to send a pull request, the following is my GitHub account: https://github.com/Renatatims
 
   ## Tests
-  Please make sure the inquirer is installed. Once the node_modules are downloaded, than you can run the application by typing 'node index.js' in the terminal and the user will be prompt with 12 questions.
+  Please make sure the inquirer is installed. Once the node_modules are downloaded, then you can run the application by typing 'node index.js' in the terminal and the user will be prompt with 12 questions.
+  Please check the folder "tests" to check two README sample files generated using this application.
 
   ## Questions
   If you have any questions please contact me at:

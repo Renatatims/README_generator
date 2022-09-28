@@ -19,7 +19,7 @@
   Tools: Open Weather One Call API 1.0
 
   ## Usage
-  Please type in the city you desire, once you click the search button, current weather information and 5-day forecast will apear on the right side.
+  Please type in the city you desire, once you click the search button, current weather information and 5-day forecast will appear on the right side.
 
   ## Features
   1. Search weather by city  
@@ -41,9 +41,8 @@
 
   ## Questions
   If you have any questions please contact me at:
-   - GitHub account:https://gihub.com/ https://github.com/Renatatims
+   - GitHub account:https://github.com/Renatatims
    - e-mail account: @gmail.com
-
   ## Credits
   Sources: Open Weather API: https://openweathermap.org/api
  
